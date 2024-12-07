@@ -102,7 +102,7 @@ async function bookSeat(req, res) {
         console.error("Error during seat booking transaction:", error);
         res.status(500).json({ message: "Error booking seat", error });
     } finally {
-        client.query("RELEASE");
+        client.release();
     }
 }
 
