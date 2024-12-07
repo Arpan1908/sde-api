@@ -1,0 +1,11 @@
+
+//routes to test on
+
+
+Action	             Method	      Endpoint	                        Protected By
+Register a User	      POST	      /api/user/register	            None
+Login User	          POST	      /api/user/login	                None
+Add a Train (Admin)	  POST	      /api/admin/trains	                x-api-key
+Seat Availability	  GET	      /api/trains	                    None
+Booking Seat	      POST	      /api/user/bookings	            Authorization Token
+Booking Details	      GET	      /api/user/bookings/:bookingId	    Authorization Token
