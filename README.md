@@ -1,6 +1,6 @@
 A real-time railway management system where users can check train availability, book seats, and manage bookings. The system supports Role-Based Access Control (RBAC) with Admin and User roles. Admins can add and manage trains, while users can book seats and view booking details. The app ensures security with JWT authentication and protects Admin routes with an API key.
 
-📦 Features
+Features
 User Registration & Login with JWT authentication.
 Admin Functionality to add new trains and manage seat availability.
 Check Train Availability between two stations.
@@ -11,13 +11,13 @@ Database powered by PostgreSQL using NeonDB.
 Security enhanced with Helmet middleware
 
 
-🚀 Installation and Setup
+Installation and Setup
 Follow these steps to set up the project on your local machine.
 
 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/railway-management-system.git
-cd railway-management-system
+git clone https://github.com/Arpan1908/sde-api.git
+cd sde-api
 ```
 3. Install Dependencies
 Install the required packages using npm:
@@ -35,7 +35,7 @@ DATABASE_URL=postgresql://username:password@your-neon-endpoint/dbname
 JWT_SECRET=your_jwt_secret
 
 # API Key for Admin Routes
-ADMIN_API_KEY=your_admin_api_key
+ADMIN_KEY=your_admin_api_key
 ```
 
 Instructions to Generate Keys:
